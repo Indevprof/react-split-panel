@@ -1052,10 +1052,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@indevstudio/react-event-listener@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@indevstudio/react-event-listener/-/react-event-listener-0.6.6.tgz#3f01b50b6c381c4745874b6ca1c39d8d8743047b"
-  integrity sha512-/RrL2Yuhszv0VatXMo9zMZFFnHUXNMnMPwXJ4gFlELVIGkon3lc4AHpAb9i3cwGefNbckPFamQCmQSqaMhSblw==
+"@indevstudio/react-event-listener@^0.6.10":
+  version "0.6.10"
+  resolved "https://registry.yarnpkg.com/@indevstudio/react-event-listener/-/react-event-listener-0.6.10.tgz#34afa46911c9a4b7b69bf8d9171fdbc71a2e380c"
+  integrity sha512-Ljoh+a6N5Yvc86egEPnZWYV37jbaotEAl9HvHupODD4lRq+bN4qTN/UAepo4hycejeeyM8CS5/Wu3ygZFuFA4A==
   dependencies:
     "@babel/runtime" "^7.17.2"
     prop-types "^15.8.1"
@@ -1498,13 +1498,6 @@
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-event-listener@^0.4.12":
-  version "0.4.12"
-  resolved "https://registry.yarnpkg.com/@types/react-event-listener/-/react-event-listener-0.4.12.tgz#601b6b83e53fbea191cadf32175e4d9af6004e64"
-  integrity sha512-ilfwCBSnIfd55qhMTIYvEjoMVds8xXDgwoBd1CT1MjiZBmE8oEstjrHos5iI/pUmAGooalo9oEUBc79kXVuYlA==
   dependencies:
     "@types/react" "*"
 

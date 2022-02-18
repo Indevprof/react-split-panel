@@ -50,12 +50,12 @@ export const SplitPanelChildren: FC<ISplitPanelChildren> = (props: PropsWithChil
       {paneStyleProps.map((pane, idx) => {
         const child = notNullChildren[idx];
         return (
-          <>
+          <React.Fragment key="idx">
             {idx !== 0 && <Resizer index={idx - 1} key={`Resizer-${idx - 1}`} {...resizerProps} />}
             <React.Fragment key={`Pane-${idx}`}>{
             child.type === Pane ? cloneElement(child, pane) : <Pane {...pane}>{child}</Pane>}
             </React.Fragment>
-          </>
+          </React.Fragment>
         );
       })}
     </>

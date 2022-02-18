@@ -1,5 +1,5 @@
 import React, { FC, useState, PropsWithChildren, useEffect, useCallback, useRef } from 'react';
-import EventListener, { withOptions } from 'react-event-listener';
+import EventListener, { withOptions } from '@indevstudio/react-event-listener';
 import styled from '@emotion/styled';
 import { calculateSizes, getDimensionsSnapshot, getPanePropSize } from './utils';
 import isEqual from 'lodash/isEqual';
