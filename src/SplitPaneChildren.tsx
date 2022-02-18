@@ -28,7 +28,7 @@ export const SplitPanelChildren: FC<ISplitPanelChildren> = (props: PropsWithChil
       ...child.props,
       key: `Pane-${idx}`,
       'data-type': 'Pane',
-      ref: (el: Element) => paneElementsRef.current[idx] = el,
+      ref: (el: Element) => (paneElementsRef.current[idx] = el),
       __internal: {
         split: split,
         resizersSize,
@@ -42,7 +42,7 @@ export const SplitPanelChildren: FC<ISplitPanelChildren> = (props: PropsWithChil
     onMouseDown: onResizerMouseDown,
     onTouchStart: onResizerTouchStart,
     style: resizerStyle,
-    className: resizerClassName
+    className: resizerClassName,
   };
 
   return (
@@ -51,8 +51,10 @@ export const SplitPanelChildren: FC<ISplitPanelChildren> = (props: PropsWithChil
         const child = notNullChildren[idx];
         return (
           <>
-            {idx !== 0 && <Resizer index={idx - 1} key={`Resizer-${idx - 1}`} {...resizerProps}/>}
-            {child.type === Pane ? cloneElement(child, pane) : <Pane {...pane}>{child}</Pane>}
+            {idx !== 0 && <Resizer index={idx - 1} key={`Resizer-${idx - 1}`} {...resizerProps} />}
+            <React.Fragment key={`Pane-${idx}`}>{
+            child.type === Pane ? cloneElement(child, pane) : <Pane {...pane}>{child}</Pane>}
+            </React.Fragment>
           </>
         );
       })}
